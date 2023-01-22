@@ -9,10 +9,10 @@ jobs:
         env:
           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
         with:
-          source-files: 'vindex-3D-unity/WebGlBuild/'
+          source-files: 'WebGlBuild'
           destination-username: 'sm-vindex'
           destination-repository: 'vindex'
           destination-branch: 'master'
-          destination-directory: 'vindex/public/assets/'
+          destination-directory: 'public/assets'
           commit-email: 'zzpdavid2l@gmail.com'
           commit-message: 'Update Unity build'
