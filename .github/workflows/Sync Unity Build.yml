@@ -1,0 +1,17 @@
+name: update WebGlBuild
+on: push
+jobs:
+  copy-folder:
+    runs-on: ubuntu-latest    
+    steps: 
+      - name: Push generated webpage to another repository
+        uses: nkoppel/push-files-to-another-repository@1.1.0
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+        with:
+          source-files: 'WebGlBuild/'
+          destination-username: 'sm-vindex'
+          destination-repository: 'vindex.html'
+          destination-directory: 'src'
+          commit-email: 'zzpdavid2l@gmail.com'
+          commit-message: 'Update Unity build'
