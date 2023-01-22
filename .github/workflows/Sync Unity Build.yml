@@ -9,10 +9,10 @@ jobs:
         env:
           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
         with:
-          destinatin-branch: 'main'
           source-files: 'WebGlBuild/'
           destination-username: 'sm-vindex'
           destination-repository: 'vindex.html'
+          destination-branch: 'main'
           destination-directory: 'public/assets/'
           commit-email: 'zzpdavid2l@gmail.com'
           commit-message: 'Update Unity build'
