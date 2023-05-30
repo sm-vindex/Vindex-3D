@@ -1,0 +1,4 @@
+repository "Vindex-3D@Vindex@cloud"
+  path "/"
+    br "/main"
+    co "/main"
